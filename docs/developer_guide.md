@@ -7,7 +7,7 @@ $ git clone https://www.github.com/<yourusername>/skoda_koda && cd skoda_koda
 ```
 You now have a local clone of your fork, let's create a reference to the original (real) repo also:
 ```shell
-$ git remote add original https://github.com/joseflekardal/skoda_koda
+$ git remote add original https://github.com/virtualfive/skoda_koda
 ```
 Whenever you need to pull a updated version from it just run:
 ```shell

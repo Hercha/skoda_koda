@@ -1,0 +1,40 @@
+{
+  "name": "skoda_koda",
+  "version": "1.0.0",
+  "description": "Skoda requested a web app that would scan the most common social medias (Facebook, Instagram and Twitter) to see what people say about their new car. Skoda asked for something that feels \"real time\", anytime anyone posts on their hashtag we should display it in a typewriter fashion. The front end should be responsive, we will approach it as a mobile first product since it's tightly connected to social medias.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm start",
+    "sass": "node-sass assets/scss --output-style compressed -o assets/dist",
+    "autoprefixer": "postcss -u autoprefixer -r assets/dist/*.css",
+    "build:css": "npm run sass && npm run autoprefixer",
+    "watch:css": "onchange 'assets/scss/*.scss' -- npm run build:css",
+    "browserify": "browserify assets/js/index.js > assets/dist/bundle.js",
+    "serve": "browser-sync start --server --files '*.*, assets/dist/*'",
+    "watch:js": "onchange assets/js/index.js -- npm run browserify",
+    "start": "npm-run-all --parallel serve watch:*"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "browser-sync": "^2.18.8",
+    "browserify": "^14.3.0",
+    "node-sass": "^4.5.2",
+    "npm-run-all": "^4.0.2",
+    "onchange": "^3.2.1",
+    "postcss-cli": "^3.2.0"
+  },
+  "dependencies": {
+    "node-twitter": "^0.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/virtualfive/skoda_koda.git"
+  },
+  "author": "Josef Lekardal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/virtualfive/skoda_koda/issues"
+  },
+  "homepage": "https://github.com/virtualfive/skoda_koda#readme"
+}
