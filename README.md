@@ -6,13 +6,12 @@ Skoda requested a web app that would scan the most common social medias (Faceboo
 ## Contribute
 Feel free to fork and improve but please read the [developer guide](docs/developer_guide.md) before you contribute.
 ___
-Once you've forked the repo you should install all it's dependencies `$ npm install`.
-Now you are ready to start working run `$ npm start` and stop the process with `$ ctrl+c`.
-If you only address stylesheets you can run `$ npm run sass` to only run the server and compile scss-files.
+Once you've forked the repo just run `$ npm install` to install dependencies and start the project.
+To stop the process run `$ ctrl+c`, start it again use `$ npm start` (no need to install again).
 
 ### Virtual Five (our team) concists of:
-* Project owner - Jens Hedberg
+* Project owner - [Jens Hedberg](https://github.com/Jensic)
 * Scrum master - Michaela Bång
-* Developer - Hugo Kreipke
+* Developer - [Hugo Kreipke](https://github.com/xhkr)
 * Developer - Linda Anderson
-* Developer - Josef Lekardal
+* Developer - [Josef Lekardal](https://github.com/joseflekardal)
