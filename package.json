@@ -9,9 +9,9 @@
     "sass": "node-sass assets/scss --output-style compressed -o assets/dist",
     "autoprefixer": "postcss -u autoprefixer -r assets/dist/*.css",
     "build:css": "npm run sass && npm run autoprefixer",
-    "watch:css": "onchange 'assets/scss/*.scss' -- npm run build:css",
+    "watch:css": "onchange \"assets/scss/**/*.scss\" -- npm run build:css",
     "browserify": "browserify assets/js/index.js > assets/dist/bundle.js",
-    "serve": "browser-sync start --server --files '*.*, assets/dist/*'",
+    "serve": "browser-sync start --server --files \"*.*, assets/dist/*\"",
     "watch:js": "onchange assets/js/index.js -- npm run browserify",
     "start": "npm-run-all --parallel serve watch:*"
   },
